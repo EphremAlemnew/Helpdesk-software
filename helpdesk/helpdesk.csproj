@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5584EEC-475B-4C0D-A225-58A099D6BD51}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>helpdesk</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acknowledgment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acknowledgment.Designer.cs">
+      <DependentUpon>Acknowledgment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDash.Designer.cs">
+      <DependentUpon>AdminDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_feedBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_feedBack.Designer.cs">
+      <DependentUpon>Admin_feedBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_feedbackOnExpert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_feedbackOnExpert.Designer.cs">
+      <DependentUpon>admin_feedbackOnExpert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_otherfeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_otherfeedback.Designer.cs">
+      <DependentUpon>admin_otherfeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All_Experts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="All_Experts.Designer.cs">
+      <DependentUpon>All_Experts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assigned_task.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assigned_task.Designer.cs">
+      <DependentUpon>Assigned_task.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Businesslayer.cs" />
+    <Compile Include="Categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categories.Designer.cs">
+      <DependentUpon>Categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpertViewFull.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpertViewFull.Designer.cs">
+      <DependentUpon>ExpertViewFull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeedBackOnExpert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedBackOnExpert.Designer.cs">
+      <DependentUpon>FeedBackOnExpert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeedofExperts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedofExperts.Designer.cs">
+      <DependentUpon>FeedofExperts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstLoad.Designer.cs">
+      <DependentUpon>FirstLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotPassword.Designer.cs">
+      <DependentUpon>forgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="heLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="heLogIn.Designer.cs">
+      <DependentUpon>heLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperDash.Designer.cs">
+      <DependentUpon>HelperDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperTasks.Designer.cs">
+      <DependentUpon>HelperTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperHome.Designer.cs">
+      <DependentUpon>HelperHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helpers.Designer.cs">
+      <DependentUpon>Helpers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPass.Designer.cs">
+      <DependentUpon>UserPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherFeedback.Designer.cs">
+      <DependentUpon>OtherFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Requests.Designer.cs">
+      <DependentUpon>Requests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sendFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sendFeedback.Designer.cs">
+      <DependentUpon>sendFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup.Designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin.Designer.cs">
+      <DependentUpon>SuperAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserApply.Designer.cs">
+      <DependentUpon>UserApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validadmin.cs" />
+    <EmbeddedResource Include="Acknowledgment.resx">
+      <DependentUpon>Acknowledgment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDash.resx">
+      <DependentUpon>AdminDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_feedBack.resx">
+      <DependentUpon>Admin_feedBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_feedbackOnExpert.resx">
+      <DependentUpon>admin_feedbackOnExpert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_otherfeedback.resx">
+      <DependentUpon>admin_otherfeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All_Experts.resx">
+      <DependentUpon>All_Experts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assigned_task.resx">
+      <DependentUpon>Assigned_task.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories.resx">
+      <DependentUpon>Categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpertViewFull.resx">
+      <DependentUpon>ExpertViewFull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedBackOnExpert.resx">
+      <DependentUpon>FeedBackOnExpert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedofExperts.resx">
+      <DependentUpon>FeedofExperts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstLoad.resx">
+      <DependentUpon>FirstLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotPassword.resx">
+      <DependentUpon>forgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="heLogIn.resx">
+      <DependentUpon>heLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperDash.resx">
+      <DependentUpon>HelperDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperTasks.resx">
+      <DependentUpon>HelperTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperHome.resx">
+      <DependentUpon>HelperHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers.resx">
+      <DependentUpon>Helpers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPass.resx">
+      <DependentUpon>UserPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherFeedback.resx">
+      <DependentUpon>OtherFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Requests.resx">
+      <DependentUpon>Requests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sendFeedback.resx">
+      <DependentUpon>sendFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperAdmin.resx">
+      <DependentUpon>SuperAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserApply.resx">
+      <DependentUpon>UserApply.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dash.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
